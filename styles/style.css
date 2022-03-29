@@ -47,12 +47,12 @@ body header .navBar {
   font-weight: bold;
   font-size: 15px;
   gap: 20px;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 97%;
   left: -200%;
@@ -62,12 +62,7 @@ body header .navBar {
           flex-direction: column;
   background-color: #e4ad38;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-transition: all 0.5s horizontal;
   transition: all 0.5s horizontal;
 }

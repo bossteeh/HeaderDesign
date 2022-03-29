@@ -35,15 +35,14 @@ body {
       font-weight: bold;
       font-size: 15px;
       gap: 20px;
-      align-items: right;
-      justify-content: right;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       top: 97%;
       left: -200%;
       flex-direction: column;
       background-color: rgb(228, 173, 56);
       width: 100%;
-      align-items: center;
       justify-content: center;
         transition: all 0.5s horizontal;
       &.show {
