@@ -44,7 +44,7 @@ body {
       background-color: rgb(228, 173, 56);
       width: 100%;
       justify-content: center;
-        transition: all 0.5s horizontal;
+      transition: all 0.5s horizontal;
       &.show {
         left: 0;
       }
@@ -126,12 +126,15 @@ body {
   padding: 50px;
   border-radius: 5px;
   color: rgb(53, 52, 54);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 input {
   height: 30px;
   border-radius: 5px;
   border: 2px solid rgb(146, 141, 151);
-  width: 300px;
+  width: 200px;
   padding-left: 15px;
 }
 .inputs {
@@ -173,12 +176,27 @@ h2 {
 }
 .agrfont {
   font-size: 14px;
-  // text-align: center;
+  text-align: center;
+  min-width: 200px;
 }
-.btn-primary {
-  background-color: rgb(20, 139, 66);
+.modal-footer {
+  align-items: center;
   justify-content: center;
   display: flex;
+  button {
+    width: 200px;
+    text-align: center;
+    padding: 20px 50px;
+    background-color: rgb(20, 139, 66);
+    justify-content: center;
+    display: flex;
+  }
+  button:hover {
+    background-color: rgb(228, 173, 56);
+    color: rgb(255, 255, 255);
+  }
+}
+.btn-primardy {
   margin: 0px 194px;
 }
 .btn-primary:hover {
@@ -199,4 +217,26 @@ h2 {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.btn_ {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  span {
+    color: black;
+    background-color: rgb(228, 173, 56);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 5px darkgray;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width:968px) {
+    .btn_{
+        display: none;
+    }
 }
