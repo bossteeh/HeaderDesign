@@ -246,7 +246,7 @@ h2 {
 }
 
 .navbar li {
-  float: left;
+  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
