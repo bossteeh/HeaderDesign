@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delight Header</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
     <header>
+        <!-- Brand Logo  -->
         <div class="brandLogo">
             <img src="/images/logo.png" alt="brandLogo">
         </div>
@@ -24,18 +26,74 @@
             <li>Blog</li>
             <li>Contact Us</li>
         </ul>
-        <button>Get Started</button>
-        
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+
         <!-- <div>
             <input type="search" name="searchdoc" id="">
         <span>Search</span> -->
         </div>
     </header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Welcome to Delight</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="get" action="" class="main-form">
+                        <center> <img class="img" src="/images/logo.png" /></center>
+                        <div class="inputs">
+                            <label>First name</label>
+                            <div>
+                                <input type="text" placeholder="First name" />
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <label>Last name</label>
+                            <div>
+                                <input type="text" placeholder="Last name" />
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <label>Email</label>
+                            <div>
+                                <input type="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <label>Password</label>
+                            <div>
+                                <input type="password" placeholder="Password" />
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <label>Confirm Password</label>
+                            <div>
+                                <input type="password" placeholder="Confirm Password" />
+                            </div>
+                        </div>
+                        <p class="agrfont">By clicking Sign Up, you agree to Ultimate Frisbee
+                        </p>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
 
 
 
     <!-- Bootstrap JS  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
